@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+	    android:paddingTop="15dp"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:paddingBottom="5dp"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+	    <Button
+	    android:id="@+id/serviceon"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="Suppress screen lock" />
+    </LinearLayout>
+    <LinearLayout android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+	    <Button
+	    android:id="@+id/serviceoff"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="Re-enable screen lock" />
+    </LinearLayout>
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:padding="10dp"
+	    android:text="Sick and tired of &quot;slide to unlock&quot;?\n\nAnnoyed by other lock disabler apps that leave you with no reminder of what you've done or take up valuable home screen space with a widget?\n\nWell, relief is here!\n\nWelcome to Lock Suppressor."
+	    />
+
+</LinearLayout>
+

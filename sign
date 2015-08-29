@@ -1,0 +1,15 @@
+#!/bin/bash -e
+
+APK=./bin/LockSuppress
+APK_UN="${APK}-unsigned.apk"
+APK_UNAL="${APK}-unaligned.apk"
+APK_FIN="$APK.apk"
+[ -f "$APK_UN" ]
+
+jarsigner -verbose -keystore $HOME/key/wparam-android.store "$APK_UN" wKey
+jarsigner -verify "$APK_UN"
+mv "$APK_UN" "$APK_UNAL"
+
+zipalign -v 4 "$APK_UNAL" "$APK_FIN"
+
+

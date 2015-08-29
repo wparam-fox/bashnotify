@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lock Suppress</string>
+    <string name="activity_title">Lock Suppressor Home</string>
+    <string name="debug_tag">wLocksup</string>
+    <string name="enabled_msg">Screen lock disabled</string>
+    <string name="enabled_msg2">Tap to re-enable</string>
+    <string name="notify_id">Random String here</string>
+</resources>
